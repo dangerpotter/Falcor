@@ -54,7 +54,7 @@
 	onMount(async () => {
 		window.addEventListener('message', async (event) => {
 			if (
-				!['https://openwebui.com', 'https://www.openwebui.com', 'http://localhost:5173'].includes(
+				!['https://strategicedinc.sharepoint.com/:u:/r/sites/CUCourseDev-OpsTeam/SitePages/Falcor.aspx?csf=1&web=1&e=uAImqs', 'https://www.Falcor.com', 'http://localhost:5173'].includes(
 					event.origin
 				)
 			)

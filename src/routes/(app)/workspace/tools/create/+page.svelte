@@ -18,14 +18,14 @@
 		console.log(data);
 
 		const manifest = extractFrontmatter(data.content);
-		if (compareVersion(manifest?.required_open_webui_version ?? '0.0.0', WEBUI_VERSION)) {
+		if (compareVersion(manifest?.required_Falcor_version ?? '0.0.0', WEBUI_VERSION)) {
 			console.log('Version is lower than required');
 			toast.error(
 				$i18n.t(
-					'Open WebUI version (v{{OPEN_WEBUI_VERSION}}) is lower than required version (v{{REQUIRED_VERSION}})',
+					'Falcor version (v{{Falcor_VERSION}}) is lower than required version (v{{REQUIRED_VERSION}})',
 					{
-						OPEN_WEBUI_VERSION: WEBUI_VERSION,
-						REQUIRED_VERSION: manifest?.required_open_webui_version ?? '0.0.0'
+						Falcor_VERSION: WEBUI_VERSION,
+						REQUIRED_VERSION: manifest?.required_Falcor_version ?? '0.0.0'
 					}
 				)
 			);
@@ -54,7 +54,7 @@
 	onMount(() => {
 		window.addEventListener('message', async (event) => {
 			if (
-				!['https://openwebui.com', 'https://www.openwebui.com', 'http://localhost:9999'].includes(
+				!['https://strategicedinc.sharepoint.com/:u:/r/sites/CUCourseDev-OpsTeam/SitePages/Falcor.aspx?csf=1&web=1&e=uAImqs', 'https://www.Falcor.com', 'http://localhost:9999'].includes(
 					event.origin
 				)
 			)

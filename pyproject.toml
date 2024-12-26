@@ -1,8 +1,8 @@
 [project]
-name = "open-webui"
-description = "Open WebUI"
+name = "Falcor"
+description = "Falcor"
 authors = [
-    { name = "Timothy Jaeryang Baek", email = "tim@openwebui.com" }
+    { name = "Austin Potter", email = "austin.potter@capella.edu" }
 ]
 license = { file = "LICENSE" }
 dependencies = [
@@ -118,7 +118,7 @@ classifiers = [
 ]
 
 [project.scripts]
-open-webui = "open_webui:app"
+Falcor = "Falcor:app"
 
 [build-system]
 requires = ["hatchling"]
@@ -150,4 +150,4 @@ exclude = [
     "webui.db",
     "chroma.sqlite3",
 ]
-force-include = { "CHANGELOG.md" = "open_webui/CHANGELOG.md", build = "open_webui/frontend" }
+force-include = { "CHANGELOG.md" = "Falcor/CHANGELOG.md", build = "Falcor/frontend" }

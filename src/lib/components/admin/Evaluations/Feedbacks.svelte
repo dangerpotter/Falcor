@@ -65,7 +65,7 @@
 	};
 
 	const shareHandler = async () => {
-		toast.success($i18n.t('Redirecting you to OpenWebUI Community'));
+		toast.success($i18n.t('Redirecting you to Falcor Community'));
 
 		// remove snapshot from feedbacks
 		const feedbacksToShare = feedbacks.map((f) => {
@@ -74,7 +74,7 @@
 		});
 		console.log(feedbacksToShare);
 
-		const url = 'https://openwebui.com';
+		const url = 'https://strategicedinc.sharepoint.com/:u:/r/sites/CUCourseDev-OpsTeam/SitePages/Falcor.aspx?csf=1&web=1&e=uAImqs';
 		const tab = await window.open(`${url}/leaderboard`, '_blank');
 
 		// Define the event handler function
@@ -266,7 +266,7 @@
 					}}
 				>
 					<div class=" self-center mr-2 font-medium line-clamp-1">
-						{$i18n.t('Share to OpenWebUI Community')}
+						{$i18n.t('Share to Falcor Community')}
 					</div>
 
 					<div class=" self-center">

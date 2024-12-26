@@ -41,9 +41,9 @@
 	let codeEditor;
 	let boilerplate = `"""
 title: Example Filter
-author: open-webui
-author_url: https://github.com/open-webui
-funding_url: https://github.com/open-webui
+author: Falcor
+author_url: https://github.com/Falcor
+funding_url: https://github.com/Falcor
 version: 0.1
 """
 
@@ -110,7 +110,7 @@ class Filter:
 
 	const _boilerplate = `from pydantic import BaseModel
 from typing import Optional, Union, Generator, Iterator
-from open_webui.utils.misc import get_last_user_message
+from Falcor.utils.misc import get_last_user_message
 
 import os
 import requests
